@@ -73,3 +73,32 @@ Prediction  benign malignant
 </code>
 
 Now for the new 3 cases input dignosed them with benign.
+
+## 3 - Tree Volume Prediction
+### A study using KNN to predict volume from trees with 2 data sets, the first for training and test and the second with new data to see the prediction working on regression.
+
+
+<code>
+k-Nearest Neighbors 
+
+246 samples
+  5 predictor
+
+No pre-processing
+Resampling: Bootstrapped (25 reps) 
+Summary of sample sizes: 246, 246, 246, 246, 246, 246, ... 
+Resampling results across tuning parameters:
+
+  k  RMSE      Rsquared   MAE     
+  1  123.5028  0.6429593  89.26398
+  3  112.5262  0.6899807  83.89845
+  5  110.2912  0.7002208  84.26347
+  7  107.9236  0.7124659  83.60382
+  9  107.4121  0.7153338  83.73420
+
+RMSE was used to select the optimal model using the smallest value.
+The final value used for the model was k = 9.
+
+> r2(predict.knn,teste$Volume)
+[1] 0.71982
+</code>
