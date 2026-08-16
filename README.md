@@ -1,2 +1,75 @@
 # Machine Learning Study
+## This is a series of studies on machine learning.
 
+### The methods, lessons, and insights from each module are listed below.
+
+## 1 - Iris Petal study
+### A baseline study using iris petals from the R dataset and KNN to predict their values.
+A confusion matrix was used and an accuracy of 96.67% was achieved. 
+<code>
+Confusion Matrix and Statistics
+
+            Reference
+Prediction   setosa versicolor virginica
+  setosa         10          0         0
+  versicolor      0         11         1
+  virginica       0          0         8
+
+Overall Statistics
+                                          
+               Accuracy : 0.9667          
+                 95% CI : (0.8278, 0.9992)
+    No Information Rate : 0.3667          
+    P-Value [Acc > NIR] : 4.476e-12       
+                                          
+                  Kappa : 0.9497          
+                                          
+ Mcnemar's Test P-Value : NA              
+
+Statistics by Class:
+
+                     Class: setosa Class: versicolor Class: virginica
+Sensitivity                 1.0000            1.0000           0.8889
+Specificity                 1.0000            0.9474           1.0000
+Pos Pred Value              1.0000            0.9167           1.0000
+Neg Pred Value              1.0000            1.0000           0.9545
+Prevalence                  0.3333            0.3667           0.3000
+Detection Rate              0.3333            0.3667           0.2667
+Detection Prevalence        0.3333            0.4000           0.2667
+Balanced Accuracy           1.0000            0.9737           0.9444
+</code>
+
+
+## 2 - Breast Cancer Predict
+### A study using KNN to predict breast cancer with 2 data sets, the first for training and test and the second with new data to see the prediction working on classification.
+On 80% for tranning and 20% for testing was found a 95,71% accuracy.
+<code>
+Confusion Matrix and Statistics
+
+           Reference
+Prediction  benign malignant
+  benign        86         2
+  malignant      4        48
+                                          
+               Accuracy : 0.9571          
+                 95% CI : (0.9091, 0.9841)
+    No Information Rate : 0.6429          
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.9075          
+                                          
+ Mcnemar's Test P-Value : 0.6831          
+                                          
+            Sensitivity : 0.9556          
+            Specificity : 0.9600          
+         Pos Pred Value : 0.9773          
+         Neg Pred Value : 0.9231          
+             Prevalence : 0.6429          
+         Detection Rate : 0.6143          
+   Detection Prevalence : 0.6286          
+      Balanced Accuracy : 0.9578          
+                                          
+       'Positive' Class : benign 
+</code>
+
+Now for the new 3 cases input dignosed them with benign.
