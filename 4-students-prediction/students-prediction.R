@@ -1,0 +1,43 @@
+### Pacotes necessários:
+#install.packages("e1071") 
+#install.packages("caret")
+library("caret")
+library(Metrics)
+
+### Leitura dos dados
+setwd("C:/Users/norto/Documents/Machine Learning Study/4-students-prediction")
+dados <- read.csv("3 – Alunos - Dados.csv", header=T)
+View(dados)
+
+### Cria arquivos de treino e teste
+set.seed(202695)
+ind <- createDataPartition(dados$G3, p=0.80, list = FALSE)
+treino <- dados[ind,]
+teste <- dados[-ind,]
+### Prepara um grid com os valores de k que 
+### serão usados 
+tuneGrid <- expand.grid(k = c(1,3,5,7,9))
+### Executa o Knn com esse grid
+set.seed(202695)
+knn <- train(G3 ~ ., data = treino, method = "knn",
+             tuneGrid=tuneGrid)
+knn
+
+
+### Aplica o modelo no arquivo de teste
+predict.knn <- predict(knn, teste)
+### Mostra as métricas
+rmse(teste$G3, predict.knn)
+r2 <- function(predito, observado) {
+  return(1 - (sum((predito-observado)^2) / sum((observado-mean(observado))^2)))
+}
+r2(predict.knn,teste$G3)
+
+
+### PREDIÇÕES DE NOVOS CASOS
+dados_novos_casos <- read.csv("3 – Alunos - Novos Casos.csv")
+View(dados_novos_casos)
+predict.knn <- predict(knn, dados_novos_casos)
+dados_novos_casos$G3 <- NULL
+resultado <- cbind(dados_novos_casos, predict.knn)
+View(resultado)

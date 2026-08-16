@@ -102,3 +102,55 @@ The final value used for the model was k = 9.
 > r2(predict.knn,teste$Volume)
 [1] 0.71982
 </code>
+
+## 4 - Students Prediction
+### A study using KNN to predict students grades with 2 data sets, the first for training and test and the second with new data to see the prediction working on regression.
+
+<code>
+k-Nearest Neighbors 
+
+318 samples
+ 32 predictor
+
+No pre-processing
+Resampling: Bootstrapped (25 reps) 
+Summary of sample sizes: 318, 318, 318, 318, 318, 318, ... 
+Resampling results across tuning parameters:
+
+  k  RMSE      Rsquared   MAE     
+  1  2.351203  0.7450570  1.471464
+  3  2.068055  0.7992926  1.352679
+  5  1.925131  0.8265584  1.306500
+  7  1.968520  0.8198420  1.344281
+  9  1.968547  0.8214859  1.360183
+
+RMSE was used to select the optimal model using the smallest value.
+The final value used for the model was k = 5.
+
+> r2(predict.knn,teste$G3)
+[1] 0.8040666
+</code>
+
+## 5 - Bank Prediction
+### A study using KNN to predict bank possible investors with 2 data sets, the first for training and test and the second with new data to see the prediction working on regression.
+
+k-Nearest Neighbors 
+
+240 samples
+  8 predictor
+  2 classes: 'no', 'yes' 
+
+No pre-processing
+Resampling: Bootstrapped (25 reps) 
+Summary of sample sizes: 240, 240, 240, 240, 240, 240, ... 
+Resampling results across tuning parameters:
+
+  k  Accuracy   Kappa     
+  1  0.8708621  0.23941128
+  3  0.8694764  0.15256538
+  5  0.8747770  0.08970842
+  7  0.8834569  0.02979339
+  9  0.8869363  0.01085942
+
+Accuracy was used to select the optimal model using the largest value.
+The final value used for the model was k = 9.

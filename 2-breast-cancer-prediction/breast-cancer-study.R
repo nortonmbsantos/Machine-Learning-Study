@@ -1,5 +1,5 @@
 # Execute apenas uma vez para instalar:
-setwd("C:/Users/norto/Documents/Machine Learning Study/breast-cancer-prediction")
+setwd("C:/Users/norto/Documents/Machine Learning Study/2-breast-cancer-prediction")
 ### Leitura dos dados
 dados <- read.csv("1 - Cancer de Mama - Dados.csv")
 
