@@ -5,7 +5,7 @@ library("caret")
 library(Metrics)
 
 ### Leitura dos dados
-setwd("C:/Users/norto/Documents/Machine Learning Study/4-students-prediction")
+setwd("C:/Users/norto/Documents/Machine Learning Study/knn/4-students-prediction")
 dados <- read.csv("3 – Alunos - Dados.csv", header=T)
 View(dados)
 

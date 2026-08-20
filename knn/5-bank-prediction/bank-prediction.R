@@ -5,7 +5,7 @@ library("caret")
 
 
 ### Leitura dos dados
-setwd("C:/Users/norto/Documents/Machine Learning Study/5-bank-prediction")
+setwd("C:/Users/norto/Documents/Machine Learning Study/knn/5-bank-prediction")
 dados <- read.csv("4 – Banco - Dados.csv")
 View(dados)
 
