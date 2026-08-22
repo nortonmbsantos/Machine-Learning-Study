@@ -8,7 +8,7 @@ library(caret)
 library(mice)
 
 ### Leitura dos dados
-setwd("C:/Users/norto/Documents/Machine Learning Study/svm/4-students-prediction")
+setwd("C:/Users/norto/Documents/Machine Learning Study/databases")
 dados <- read.csv("3 – Alunos - Dados.csv", header=T)
 View(dados)
 

@@ -7,7 +7,7 @@ install.packages("mice")
 library(mice)
 
 ### Obter os dados
-setwd("C:/Users/norto/Documents/Machine Learning Study/svm/2-breast-cancer-prediction")
+setwd("C:/Users/norto/Documents/Machine Learning Study/databases")
 dados <- read.csv("1 - Cancer de Mama - Dados.csv")
 ### Retira o ID e preenche valores faltantes
 dados$Id <- NULL

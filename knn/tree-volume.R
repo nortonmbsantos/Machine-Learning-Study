@@ -1,7 +1,7 @@
 ### Instalação dos pacotes
 library(caret)
 ### Leitura dos dados
-setwd("C:/Users/norto/Documents/Machine Learning Study/knn/3-tree-volume-prediction")
+setwd("C:/Users/norto/Documents/Machine Learning Study/databases")
 dados <- read.csv("2 - Volume - Dados.csv", header=T)
 View(dados)
 

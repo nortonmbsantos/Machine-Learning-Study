@@ -8,7 +8,7 @@ library(mlbench)
 library(mice)
 
 ### Obter os dados
-setwd("C:/Users/norto/Documents/Machine Learning Study/nnet/2-breast-cancer-prediction")
+setwd("C:/Users/norto/Documents/Machine Learning Study/databases")
 temp_dados <- read.csv("1 - Cancer de Mama - Dados.csv")
 View(temp_dados)
 

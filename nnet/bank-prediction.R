@@ -9,7 +9,7 @@ library(mice)
 
 
 ### Leitura dos dados
-setwd("C:/Users/norto/Documents/Machine Learning Study/nnet/5-bank-prediction")
+setwd("C:/Users/norto/Documents/Machine Learning Study/databases")
 dados <- read.csv("4 – Banco - Dados.csv")
 View(dados)
 

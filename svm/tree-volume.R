@@ -5,7 +5,7 @@ install.packages("caret")
 install.packages("Metrics")
 
 ### Leitura dos dados da base de volumes
-setwd("C:/Users/norto/Documents/Machine Learning Study/svm/3-tree-volume-prediction")
+setwd("C:/Users/norto/Documents/Machine Learning Study/databases")
 dados <- read.csv("2 - Volume - Dados.csv", header=T)
 View(dados)
 
